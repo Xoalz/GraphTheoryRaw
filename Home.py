@@ -32,8 +32,11 @@ gradient_themes = {
 # =========================
 st.sidebar.title("🎨 Background Settings")
 
-# Language toggle
-lang = st.sidebar.selectbox("Language:", ["English", "Bahasa Indonesia"], index=0)
+lang = st.sidebar.selectbox(
+    "Language / Bahasa:",
+    ["English", "Bahasa Indonesia"],
+    index=0
+)
 
 # Theme mode
 theme_type = st.sidebar.selectbox(
@@ -255,3 +258,4 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
+
